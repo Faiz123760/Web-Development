@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .clsA {
+        background-color: navy;
+        color: aliceblue;
+      }
+
+      .clsB {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .clsC {
+        background-color: yellow;
+        color: brown;
+      }
+    </style>
+    <script>
+      function myfun() {
+        const ele = document.getElementById('myH');
+        let lst = ele.classList;
+
+        // lst.replace('clsA', 'clsC');
+
+        lst.toggle('clsA');
+
+        // lst.add('clsA');
+        // lst.add('clsB');
+
+        // console.log(lst.contains('clsA'));
+        // if (!lst.contains('clsB'))
+        //   lst.add('clsB');
+        // lst.remove('clsA')
+
+        console.log(lst);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="myH" class="clsB">
+      Heading 1
+    </h1>
+    <button type="button" onclick="myfun()">Button</button>
+  </body>
+
+</html>

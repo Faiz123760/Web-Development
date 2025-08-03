@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7f2595a60e.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+
+  </head>
+
+  <body>
+    <button id="myBtn">Button1</button>
+  </body>
+  <script>
+
+    const btn = document.getElementById('myBtn')
+    btn.addEventListener('click', function () {
+
+      const myTab = document.createElement('table');
+      myTab.setAttribute('border', '2px');
+      myTab.setAttribute('style', 'background-color:red');
+      let row = myTab.insertRow();
+
+      let col1 = row.insertCell();
+      col1.textContent = "Column 1";
+
+      let col2 = row.insertCell();
+      let inpEle = document.createElement('input')
+      inpEle.setAttribute('type', 'text');
+      col2.append(inpEle);
+
+      let col3 = row.insertCell();
+      col3.textContent = 'Column 3';
+
+      console.log(myTab);
+      document.body.append(myTab);
+
+
+    })
+  </script>
+
+</html>

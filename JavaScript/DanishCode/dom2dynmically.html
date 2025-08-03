@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/62298b5ced.js" crossorigin="anonymous"></script>
+    <script>
+        
+    </script>
+    
+   
+</head>
+<body>
+    <button id="mybtn">Button 1</button>
+    <!-- <div id="content" style="border: 2px solid black;"></div>
+    <button type="button" id="mybtn"> button </button> 
+    <button type="button" id="mybtn2"> button2 </button>  -->
+</body>
+
+
+<script>
+    //const btn = document.getElementById("mybtn");
+   //btn.addEventListener("click", ()=>{
+   // const myH = document.createElement("h1");
+   // myH.textContent = "My Dynamic Heading";
+   // myH.style.color = "blue";
+   // console.log(myH);
+   // document.body.append(myH); // Appends the heading at the end of the body
+   // document.body.prepend(myH); // Adds the heading at the beginning of the body
+
+   //});
+   //const btn2 = document.getElementById("mybtn2");
+   //btn2.addEventListener("click", ()=>{
+   // const inpele = document.createElement("input");
+   // inpele.setAttribute("type", "date"); //setting the attribute 
+   // inpele.setAttribute("name", "dateInput");
+   // inpele.setAttribute("id", "dateInput");
+   // inpele.setAttribute("placeholder", "Select a date");
+   // console.log(inpele);
+//
+   //  const div = document.getElementById("content");
+   //div.append(inpele); // Appends the input element to the div
+  // });
+
+  const btn = document.getElementById("mybtn");
+  btn.addEventListener("click",()=>{
+
+    const mytab = document.createElement("table");
+    let row = mytab.insertRow(); // Create a new row
+    let col1 = row.insertCell(); // Create a new cell in the row
+    col1.textContent = "Column 1"; // Set text content for the cell
+    let col2 = row.insertCell();
+    let inpele = document.createElement("input");
+    inpele.setAttribute("type", "text");
+    col2.append(inpele);
+    let col3 = row.insertCell();
+    col3.textContent = "Column 3";
+    
+    document.body.append(mytab); // Append the table to the body
+    mytab.style.border = "1px solid black"; // Add border to the table
+  })
+  
+
+</script>
+
+    
+
+    
+</script>
+</html>

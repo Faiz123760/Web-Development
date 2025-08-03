@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+
+            const fn = function () {
+                console.log("Anonymous fun....");
+            }
+            fn();
+
+            const fn2 = (num) => num ** 2;
+            let result = fn2(5);
+            console.log(result);
+
+            const fn3 = (num) => { return num ** 2 };
+            result = fn3(5);
+            console.log(result);
+
+
+            const calc_int = (amt, rate, time = 1) => (amt * rate * time) / 100;
+            result = calc_int(5000, 10);
+            console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

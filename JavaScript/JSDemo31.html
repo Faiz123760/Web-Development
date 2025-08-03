@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      let userData = [
+        { uid: 1001, unm: 'Sachin', age: 55, gender: 'Male', dept: "CSE" },
+        { uid: 1002, unm: 'Zaheer', age: 45, gender: 'Male', dept: "ME" },
+        { uid: 1003, unm: 'Rahul', age: 48, gender: 'Male', dept: "EC" },
+        { uid: 1004, unm: 'Kaif', age: 43, gender: 'Male', dept: "CSE" },
+        { uid: 1005, unm: 'Robin', age: 43, gender: 'Male', dept: "AIML" },
+      ]
+
+      function fetchData(userId) {
+        console.log(`Fetching Data for User ID ${userId} `);
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            let user = userData.find((user) => {
+              if (user.uid == userId)
+                return true
+            })
+            if (user) {
+              resolve(user) // Promise Resolved
+            }
+            else
+              reject("User Not Found...");  // Promise Rejected
+          }, 2000)
+        })
+      }
+
+      fetchData(1001).then((data) => {
+        console.log(data);
+        fetchData(1002).then((data) => {
+          console.log(data);
+          fetchData(1003).then((data) => {
+            console.log(data);
+          }).catch((err) => {
+            console.log(err);
+          })
+        }).catch((err) => {
+          console.log(err);
+        })
+      }).catch((err) => {
+        console.log(err);
+      })
+
+
+
+
+    </script>
+  </head>
+
+  <body>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <div id="myDiv">
+      My Division
+      <h1>Heading 1</h1>
+      <p id="myP" style="display: none;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+    <button id="myBtn">Button</button>
+
+  </body>
+  <script>
+    document.getElementById('myBtn').addEventListener('click', () => {
+
+      const eleDiv = document.getElementById('myDiv')
+      console.log(eleDiv);
+      console.log(eleDiv.textContent);
+      console.log(eleDiv.innerText);
+      console.log(eleDiv.innerHTML);
+
+    })
+  </script>
+
+</html>

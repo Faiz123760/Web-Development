@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 5px;
+        }
+        .container>*{
+            border: 1px solid;
+            padding: 10px;
+            border-radius: 5px;
+            flex: 1 1 100%;
+
+        }
+        .container>header{
+            background-color: lightblue;
+            height: 100px;
+        }
+        .container>nav{
+            line-height: 50px;
+            background-color: lightgreen;
+        }
+        @media screen and (min-width: 992px) {
+           .maincontent {      
+            background-color: blueviolet;
+                order: 2;
+                flex: 3 3 0%;
+                 height: 500px;
+            }
+            .sidebar1 {
+                order: 1;
+                flex: 1 1 0%;
+            }
+            .sidebar2 {
+                order: 3;
+                flex: 1 1 0%;
+            }
+            .container>footer {
+                order: 4;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .sidebar1 {
+                flex: 1 1 0%;
+            }
+            .sidebar2 {
+                flex: 1 1 0%;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <header>
+    My header
+ </header>
+ <nav>
+    navigation
+ </nav>
+ <article class="maincontent">
+    My article content
+ </article>
+ <aside class="sidebar1">
+        My aside content
+    </aside> 
+    <aside class="sidebar2">
+        My second aside content
+    </aside>
+    <footer>
+        My footer
+    </footer>
+    
+    </div>
+ 
+</body>
+ 
+</html>

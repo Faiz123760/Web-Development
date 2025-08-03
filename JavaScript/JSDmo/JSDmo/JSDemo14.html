@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+
+            let arr = [1, 2, 3, 4, 5];
+
+            // function myCallBack(ele) {
+            //     if (ele % 2 == 0)
+            //         return true
+            // }
+            // let r = arr.filter(myCallBack);
+            // console.log(r);
+
+            // let r = arr.filter((ele) => {
+            //     if (ele % 2 == 0)
+            //         return true
+            // })
+
+            let r = arr.filter((ele) => ele % 2 == 0)
+            console.log(r);
+
+            let cities_data = [
+                { name: "Kanpur", population: 10000 },
+                { name: "Kolkata", population: 40000 },
+                { name: "Delhi", population: 7000 },
+                { name: "Mumbai", population: 15000 },
+            ]
+            r = cities_data.filter((city) => {
+                if (city.population > 10000)
+                    return true
+            })
+
+            console.log(r);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

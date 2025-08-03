@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function outerfun(name) {
+                console.log("Outer fun");
+                function innerFun(msg) {
+                    console.log("Inner Fun...");
+                    console.log(name, msg);
+                }
+                return innerFun;
+            }
+            let fn = outerfun("Vansh");
+            console.log(fn);
+            fn("Chala gaya...");
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Page : 2</title>
+    <style>
+        body {
+            color: black;
+        }
+        
+        .cont {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+        }
+        
+        .cont>* {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+            border: 5px;
+            flex: 1 1 100%;
+        }
+        
+        .cont>header {
+            background-color: navy;
+            color: aliceblue;
+        }
+        
+        .myNav {
+            /* height: 200px; */
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .myNav img {
+            width: 90px;
+            height: 90px;
+        }
+        
+        .myNav>ul {
+            /* text-decoration: none; */
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .myNav>ul li>a {
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+            font-size: large;
+        }
+        
+        a:hover {
+            transform: scale(1.25);
+            color: white;
+            background-color: navy;
+            border-radius: 20px;
+        }
+        
+        @media screen and (min-width:1200px) {
+            .mainCont {
+                order: 2;
+                flex: 3 3 0%;
+            }
+            .aside1 {
+                order: 1;
+                flex: 1 1 0%;
+            }
+            .aside2 {
+                order: 3;
+                flex: 1 1 0%;
+            }
+            .cont>footer {
+                order: 4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <header>
+            Header
+        </header>
+        <nav class="myNav">
+            <img src="image.png" alt="">
+            <ul>
+                <li><a href="CSS\DAY 5\Demo29.html">Home</a></li>
+                <li><a href="CSS\DAY 5\Demo30.html">About Us</a></li>
+                <li><a href="CSS\DAY 5\Demo31.html">Contact</a></li>
+                <li><a href="CSS\DAY 5\Demo32.html">Our Teams</a></li>
+                <li><a href="CSS\DAY 5\Demo33.html">Subs</a></li>
+            </ul>
+        </nav>
+
+        <article class="mainCont">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aspernatur iusto quos, deleniti suscipit dignissimos ullam officia vel laudantium, inventore rem amet nisi eum quod aliquam excepturi nulla earum vitae eos harum commodi eaque
+                aliquid tenetur reiciendis. Ut unde aperiam alias dignissimos recusandae incidunt officia? Quia dolores ut voluptatem nisi deserunt aut assumenda laudantium voluptates quod eaque animi veritatis reiciendis, dicta eius est, eligendi perferendis
+                facilis cumque expedita, velit voluptatibus. Reiciendis doloribus inventore consequuntur asperiores molestiae harum deleniti et magni, architecto natus quibusdam suscipit quam, sint quod consectetur esse sapiente. Ipsa, labore. Maxime
+                aspernatur quibusdam odio possimus laboriosam voluptas doloremque.</p>
+
+        </article>
+
+        <aside class="aside1">
+            Aside 1
+        </aside>
+
+        <aside class="aside2">
+            Aside 2
+        </aside>
+
+        <footer>
+            &copy; copyright
+        </footer>
+    </div>
+
+</body>
+
+</html>

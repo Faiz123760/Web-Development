@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let userData = [
+            { uid: 1, unm: 'doe', age: 30, city: 'New York' },
+            { uid: 2, unm: 'john', age: 50, city: 'London' },
+            { uid: 5, unm: 'Fariya', age: 5, city: 'Mumbai' },
+            { uid: 4, unm: 'virat', age: 35, city: 'America' },
+            { uid: 6, unm: 'Watson', age: 45, city: 'Austrilia' },
+            { uid: 10, unm: 'ABD', age: 42, city: 'South Africa' },
+            { uid: 7, unm: 'chris Evan', age: 40, city: 'New York' },
+            { uid: 9, unm: 'Aariz', age: 1, city: 'New zeland' },
+            { uid: 8, unm: 'Arshmaan', age: 8, city: 'Paris' },
+        ];
+        function fetchData(userid,fun) {
+            console.log(`fetching data ${userid}`)
+            setTimeout(()=>{
+            let user = userData.find((user) =>{ 
+                if(user.uid == userid)
+                return true;
+            }) //user.uid == userid this statement give the true or False value if conditiion is right and wrong
+        
+        if (user){
+        console.log("user id :",user);
+        if(fun)
+        fun()
+    }
+        else
+         console.log("user id not found :");
+        },2000)
+    }
+    //callback hell
+    fetchData(1,()=> {
+        fetchData(10,()=>{
+            fetchData(6,()=>{
+                fetchData(8)
+            })
+        })
+    })
+    
+
+
+
+
+
+
+        // console.log("hello world");
+        ////this is set time function use for asynvhronus function
+        // (function(milisecond) {
+        //   setTimeout(()=>{
+        //     console.log("hii...");
+        //   },milisecond)
+        // })(2000)
+        //
+        // console.log("Bye World...")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

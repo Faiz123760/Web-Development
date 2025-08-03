@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Controls Demo</title>
+</head>
+
+<body>
+        <form method="post">//default=get
+    <table border="1px" width="500px" align="center" bgcolor="aqua">
+        <thead>
+            <tr>
+                <th>Input Controls Demo</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Username</td>
+                <td> <input type="text" placeholder="Enter name" value="Virat - Kohli" name="username" required></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td> <input type="password" placeholder="Eg: Hp@123" required name="pwd"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td> <input type="email" placeholder="Eg: demo@gmail.comj" required name="mail-id"></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td> <input type="date" min="2020-12-31" max="2026-03-31" required name="dob"></td>
+            </tr>
+            <tr>
+                <td>SGPA</td>
+                <td> <input type="number" min="0" max="10" step="0.01" required name="sgpa"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gen" checked/>Male
+                    <input type="radio" name="gen" />Female
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td> <input type="checkbox" name="hobb1" />Swimming
+                    <input type="checkbox" name="hobb1" />Reading
+                    <input type="checkbox" name="hobb1" />Singing
+                </td>
+            </tr>
+
+            <tr>
+                <td>Date and Time</td>
+                <td> <input type="datetime-local" required name="d&t"></td>
+            </tr>
+
+            <tr>
+                <td>Color</td>
+                <td> <input type="color"  required name="color"/></td>
+            </tr>
+
+            <tr>
+                <td>Range</td>
+                <td> <input type="range" min="99" max="950" required name="range"/></td>
+            </tr>
+
+            <tr>
+                <td>Hidden Value</td>
+                <td> <input type="hidden" value="emp1" required name="hidden"/></td>
+            </tr>
+
+            <tr>
+                <td>File</td>
+                <td> <input type="file" accept=".jpg, .pdf" multiple required name="file"></td>
+            </tr>
+
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <select name="" id="" required name="qualifications">
+                        <option disabled selected>~~Select~~</option>
+                        <option >Btech</option>
+                        <option >BBA</option>
+                        <option disabled>BCA</option>
+                        <option >MBA</option>
+                        <option >BA</option>
+                        <option >BSc.</option>
+                        <option >MSc.</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <select name="qna">
+                        <option disabled selected>~~Select~~</option>
+                        
+                        <optgroup label="Tech">
+                            <option >Btech</option>
+                        <option value="">M.Tech</option>
+                        </optgroup>
+                        <optgroup label="Mngt">
+                            <option >BBA</option>
+                        <option disabled>BCA</option>
+                        <option >MBA</option>
+                        <option >BA</option>
+                        <option >BSc.</option>
+                        <option >MSc.</option>
+                        </optgroup>
+                        
+                        
+                    </select>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>University Name</td>
+                <td>
+                    <input type="text" list="mylist" required name="University">
+                    <datalist id="mylist">
+                        <option >AKTU</option>
+                        <option >RGVP</option>
+                        <option >HBTU</option>
+                        <option >CSJMU</option>
+                        <option >BHU</option>
+
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Month</td>
+                <td><input type="month" required name="month"> </td>
+            </tr>
+
+            <tr>
+                <td>Week</td>
+                <td><input type="week" required name="week"> </td>
+            </tr>
+
+            <tr>
+                <td>Search</td>
+                <td><input type="search" required name="search"> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center" required>
+                    <input type="submit">
+                    <input type="reset">
+                  
+
+                </td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+     </form>
+</body>
+
+</html>
+
+
+<!-- 
+
+http://127.0.0.1:5501/DAY%202/Demo8.html?username=Virat+-+Kohli&pwd=sfdf&mail-id=demo%40gmail.com&dob=2025-07-10&sgpa=0.04&gen=on&hobb1=on&hobb1=on&hobb1=on&d%26t=2025-07-12T18%3A09&color=%23ec0909&range=838&hidden=emp1&file=sample-1.pdf&qna=BBA&University=AKTU&month=2025-02&week=2025-W28&search=dds
+
+
+
+
+-->

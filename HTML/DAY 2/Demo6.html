@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+
+<body>
+    <!-- 
+    <embed src="SampleVideo_1280x720_1mb.mp4" />
+    <video controls autoplay muted loop>
+           <source src="SampleVideo_1280x720_2mb.mp4"/>
+    </video>
+
+    <video controls poster="1.jpg" width="500px" controlslist="nofullscreen nodownload">
+        <source src="SampleVideo_1280x720_2mb.mp4"/>
+    </video> -->
+
+
+
+    <audio controls>
+        <source src=sample-3s.mp3/>
+    </audio>
+
+    <object data="sample-1.pdf" type="application/pdf" width="100%" heigth="100%"></object>
+
+    <marquee direction="right" height="200px" scrollamount="10" height="200px" behavior="scroll">This is Marquee</marquee>//scroll default
+    <marquee direction="right" height="200px" scrollamount="10" height="200px" behavior="slide">This is Marquee</marquee>
+    <marquee direction="right" height="200px" scrollamount="10" height="200px" behavior="alternative">This is Marquee</marquee>
+    <marquee direction="right" height="200px" scrollamount="10" height="200px" behavior="slide">
+        <img src="1.jpg" alt="">
+        <img src="2.jpg" alt="">
+        <img src="3.webp" alt="">
+    </marquee>
+
+    <marquee direction="right" height="200px" scrollamount="10" height="200px" behavior="alternate" onmouseover="stop()" onmouseout="start()">
+        <img src="1.jpg" alt="">
+        <img src="2.jpg" alt="">
+        <img src="2.jpg" alt="">
+    </marquee>
+
+</body>
+
+</html>

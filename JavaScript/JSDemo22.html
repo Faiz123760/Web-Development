@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7f2595a60e.js" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+
+  </head>
+
+  <body>
+    <button id="myBtn">Button1</button>
+
+    <button id="myBtn2">Button2</button>
+    <div id="myDiv" style="border: 1px solid red;">
+
+    </div>
+
+  </body>
+  <script>
+    const btn2 = document.getElementById('myBtn2');
+    btn2.addEventListener('click', () => {
+
+      const inpEle = document.createElement('input');
+      inpEle.setAttribute('type', 'date')
+      inpEle.setAttribute('name', 'dateOfBirth')
+      inpEle.setAttribute('min', '2000-12-25')
+      // console.log(inpEle);
+
+      let eleDiv = document.getElementById('myDiv');
+      eleDiv.append(inpEle);
+
+    });
+
+
+
+
+
+
+    const btn = document.getElementById('myBtn')
+    btn.addEventListener('click', function () {
+
+      const myH = document.createElement('h1');
+      myH.textContent = "My First Dynamic Heading";
+      myH.style.color = 'red'
+      console.log(myH);
+
+      // document.body.append(myH);
+      document.body.prepend(myH);
+
+    })
+  </script>
+
+</html>

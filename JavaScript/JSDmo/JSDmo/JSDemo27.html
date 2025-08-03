@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <div id="myDiv">
+      <h1 id="h1">Heading 1</h1>
+      <h1>Heading 2</h1>
+      <button id="myBtn">Button</button> <br />
+    </div>
+
+  </body>
+  <script>
+
+    document.getElementById('myBtn').addEventListener('click', () => {
+
+      // let h1List = document.getElementsByTagName('h1');
+      // console.log(h1List);
+
+      // let h1Ele = document.querySelector('h1')
+      // let h1Ele = document.querySelector('#h1')
+      // let ele = document.querySelector('.clsA')
+      // let ele = document.querySelector('h1:nth-child(2)')
+      // console.log(ele);
+      // let h1Ele = document.querySelectorAll('p + h1')
+      // console.log(h1Ele);
+
+      let ele = document.querySelector('#myDiv');
+      console.log(ele);
+      console.log(ele.parentElement);
+      console.log(ele.parentNode);
+      console.log(ele.children);
+      console.log(ele.childNodes);
+      console.log(ele.nextElementSibling);
+
+
+
+
+
+
+    })
+  </script>
+
+</html>

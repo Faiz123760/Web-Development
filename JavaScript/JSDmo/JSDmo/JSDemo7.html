@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+
+            // function myfun() {
+            //     console.log("Myfun Calling...");
+            // }
+            // console.log(myfun);
+            // let fn = myfun;
+            // fn();
+
+            // Anonymous Function
+            //IIFE
+            (function () {
+                console.log("Anonymous Function...");
+            })();
+
+            (function (a, b) {
+                console.log("Anonymous Function...", (a + b));
+            })(10, 20);
+
+            let result = (function (num) {
+                return num ** 2;
+            })(6);
+
+            console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

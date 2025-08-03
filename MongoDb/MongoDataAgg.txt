@@ -1,0 +1,93 @@
+db.employees.insertMany([
+    { 
+        _id:1,
+        firstName: "John",
+        lastName: "King",
+        gender:'male',
+        email: "john.king@abc.com",
+        salary: 5000,
+        department: { 
+                    "name":"HR" 
+                }
+    },
+    { 
+        _id:2,
+        firstName: "Sachin",
+        lastName: "Tendulkar",
+        gender:'male',
+        email: "sachin.t@abc.com",
+        salary: 8000,
+        department: { 
+                    "name":"Finance" 
+                }
+    },
+    { 
+        _id:3,
+        firstName: "Virat",
+        lastName: "kohli",
+        gender:'male',
+        email: "kohli@abc.com",
+        salary: 7500,
+        department: { 
+                    "name":"Marketing" 
+                }
+    },
+    { 
+        _id:4,
+        firstName: "Rohini",
+        lastName: "Sharma",
+        gender:'female',
+        email: "roh@abc.com",
+        salary: 5000, 
+        department: { 
+                    "name":"HR" 
+                }
+
+    },
+    { 
+        _id:5,
+        firstName: "Kapil",
+        lastName: "Dev",
+        gender:'male',
+        email: "kapil.d@abc.com",
+        salary: 4500,
+        department: { 
+                    "name":"Finance" 
+                }
+
+    },
+    { 
+        _id:6,
+        firstName: "Amit",
+        lastName: "B",
+        gender:'male',
+        email: "amit.b@abc.com",
+        salary: 7000,
+        department: { 
+                    "name":"Marketing" 
+                }
+    },
+{ 
+        _id:7,
+        firstName: "Atul",
+        lastName: "Gupta",
+        gender:'male',
+        email: "amitgupta@abc.com",
+        salary: 7000,
+        department: { 
+                    "name":"Technical" 
+                }
+    },
+{ 
+        _id:8,
+        firstName: "Tanisha",
+        lastName: "Chauhan",
+        gender:'female',
+        email: "tanisha@abc.com",
+        salary: 6500,
+        department: { 
+                    "name":"Marketing" 
+                }
+    }
+
+])

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox-</title>
+    <style type="text/CSS">
+        .cont{ width: 700px; height: 600px; border: 1px solid white; display: flex; flex-direction: row; justify-content: center; /* align-items: center ; */ flex-wrap: wrap; align-content: center;} .cont>div{ width: 200px; height:100px; text-align: center; color:
+        aliceblue; font-size: x-large; } .cont>div:nth-child(odd){ background-color: yellowgreen; } .cont>div:nth-child(even){ background-color: aqua; } #div1{ order: 1; /* flex-grow: 1; flex-shrink: 1; flex-basis: 200px; */ flex: 3 1 0%; } #div2{ order:2;
+        flex-grow: 1; flex-shrink: 1; flex-basis: 400px;} #div3{ order: 3; /* flex-grow: 1; flex-shrink: 1; flex-shrink: 100px; */ flex:3 2 100% } h3{ color: white; } body{ background: linear-gradient(to right,rgb(95, 3, 3),black); }
+    </style>
+</head>
+
+<body>
+    <h3>1.flex-direction=>row(default), row-reverse, col, col-reverse ,2. justify-content=>flex-start(default), flex-end,center, space-between, space-around, space-evenly 3.align-item=>flex-start, flex-end, center,stretch 4.flex-wrap=> wrap, nowrap 4. align-content=>center
+        5.order 6. flex-grow 7.flex-shrink 8. flex-basis=> initail size of an element</h3>
+    <!-- flex: flex-grow flex-shrink flex-basis shorthand -->
+    <!-- div.cont>div#div${Div $}*3 -->
+    <div class="cont">
+        <div id="div1">Div 1</div>
+        <div id="div2">Div 2</div>
+        <div id="div3">Div 3</div>
+        <!-- <div id="div1">Div 1</div>
+        <div id="div2">Div 2</div>
+        <div id="div3">Div 3</div>
+        <div id="div1">Div 1</div>
+        <div id="div2">Div 2</div>
+        <div id="div3">Div 3</div> -->
+    </div>
+</body>
+
+</html>

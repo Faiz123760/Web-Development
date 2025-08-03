@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .claA{
+            background-color: lightblue;
+            color: black;
+        }
+        .claB{
+           padding: 20px;
+           text-align: center;
+        }
+        .claC{
+            background-color: aqua;
+            color: violet;
+        }
+    </style>
+    <script>
+        function showAlert() {
+         const ele =  document.getElementById("header");
+         let lst =ele.classList;
+         console.log(lst);
+
+         //adding class maually using classList javaScript to add method;
+         //lst.add("claA");
+         lst.add("claB");
+         
+         
+         // contains method to check if class is present or not
+         console.log(lst.contains("claA")); // true
+         console.log(lst.contains("claC")); // false
+
+         //removing class maually using classList javaScript to remove method
+         lst.remove("claB");
+
+         //to replace the classes
+         lst.replace("claA", "claC");
+
+         // toggles the class, adds if not present, removes if present
+         lst.toggle("claC"); 
+
+
+
+
+
+
+
+
+
+
+
+        // ele.style.color = "blue";
+        // ele.style.backgroundColor = "lightgray";
+        // ele.style.textAlign = "center";
+        // ele.style.padding = "20px 50px";
+        // ele.style.border = "2px solid black";
+         //ele.textContent = "Hello, DOM!";
+         //console.log(ele);
+         //   const para = document.getElementById("para");
+         //   para.textContent = ele.textContent ;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="header" class="claA">Hello World!</h1>
+    <!-- <p id="para">This is a sample DOM HTML document.</p> -->
+    <button type="button" onclick="showAlert()">Click Me!</button>
+</body>
+</html>

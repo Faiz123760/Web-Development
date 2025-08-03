@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function myfun() {
+        const ele = document.getElementById('myH');
+        // console.log(ele);
+        // console.log(ele.textContent);
+        
+        ele.style.backgroundColor = 'red';
+        ele.style.color = 'white';
+        ele.style.textAlign = 'center';
+        ele.style.padding = '20px 50px';
+        ele.style.border = '1px solid blue';
+
+
+        // // ele.textContent = "Hello World...";
+
+        // const pEle = document.getElementById("myP");
+        // // pEle.textContent = ele.textContent;
+        // pEle.textContent = "Hello World";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="myH">
+      Heading 1
+    </h1>
+    <p id="myP">
+
+    </p>
+    <button type="button" onclick="myfun()">Button</button>
+  </body>
+
+</html>

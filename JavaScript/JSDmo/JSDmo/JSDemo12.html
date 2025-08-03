@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+
+            function myAdd(a, b) {
+                return (a + b)
+            }
+            function mySub(a, b) {
+                return (a - b)
+            }
+
+            function calc_result(a, b, fn) {
+                return fn(a, b);
+            }
+
+            let r = calc_result(5, 10, myAdd);
+            console.log(r);
+
+            r = calc_result(5, 10, mySub);
+            console.log(r);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

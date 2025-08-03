@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+
+            // function myfun() {
+            //     console.log("Fun Calling...");
+            // }
+            // myfun();
+
+            // function calc_int(amt=1000, rate, time = 1) {
+            //     return (amt * rate * time) / 100;
+            // }
+            // let r = calc_int(10);
+            // console.log(r);
+
+            function mySum(...c) {
+                let sum = 0;
+                for (let ele of c)
+                    sum += ele;
+                return sum;
+            }
+
+            let r = mySum(10, 20);
+            console.log(r);
+
+            r = mySum(10, 20, 30, 40, 50);
+            console.log(r);
+
+            r = mySum();
+            console.log(r);
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

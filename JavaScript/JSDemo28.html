@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+// setTimeout(callback , time)
+
+      console.log("Hello World...");
+
+      (function (milliSeconds) {
+
+        setTimeout(() => {
+          console.log('Hi...');
+        }, milliSeconds)
+        
+        console.log("Inside Fun...");
+        
+
+      })(2000);
+
+      console.log("Bye World...");
+
+
+
+      // (function (milliSeconds) {
+
+      //   let currentTime = new Date().getTime();
+      //   while (new Date().getTime() < currentTime + milliSeconds) {
+      //     console.log('Hi...');
+      //   }
+
+      // })(1000);
+      
+
+
+
+      // console.log("Hello World");
+      // // IIFE
+      // (function () {
+      //   console.log("Function Calling...");
+      // })()
+      // console.log("Bye World....");
+
+
+
+    </script>
+  </head>
+
+  <body>
+
+
+
+  </body>
+
+</html>

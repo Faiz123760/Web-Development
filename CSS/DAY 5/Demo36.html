@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query- Responsiveness</title>
+    <style>
+        h1 {
+            display: none;
+        }
+        
+        @media screen and (max-width:575px) {
+            #h1 {
+                background-color: red;
+                display: block;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (min-width:576px) and (max-width:767px) {
+            #h2 {
+                background-color: aqua;
+                display: block;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (min-width:768px) and (max-width:991px) {
+            #h3 {
+                background-color: brown;
+                display: block;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (min-width:992px) and (max-width:1199px) {
+            #h4 {
+                background-color: yellow;
+                display: block;
+                text-align: center;
+            }
+        }
+        
+        @media screen and (min-width:1200px) {
+            #h5 {
+                background-color: purple;
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1" class="cont">Heading - XS</h1>
+    <h1 id="h2" class="cont">Heading - S</h1>
+    <h1 id="h3" class="cont">Heading - M</h1>
+    <h1 id="h4" class="cont">Heading - L</h1>
+    <h1 id="h5" class="cont">Heading - XL</h1>
+
+</body>
+
+</html>

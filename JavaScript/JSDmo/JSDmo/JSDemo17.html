@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+
+            let arr = [4, 123, 19, 1, 25, 8, 432];
+            arr.sort((a, b) => {
+                // console.log(a, b);
+                // console.log(a - b);
+                return (a - b);
+
+
+            });
+            // console.log(arr);
+
+            let names = ["Sachin", "Rahul", "Virat", "Zaheer", "Yuvraj", "Kaif"];
+            // names.sort()
+            // console.log(names);
+
+
+            // let arr2 = [9, 2, ...arr];
+            // console.log(arr2);
+
+            let userData = [
+                { uid: 1004, unm: 'Sachin', age: 55 },
+                { uid: 1002, unm: 'Zaheer', age: 45 },
+                { uid: 1003, unm: 'Rahul', age: 48 },
+                { uid: 1005, unm: 'Kaif', age: 43 },
+            ]
+
+            // Sort ID
+            let r = [...userData].sort((a, b) => {
+                return (a.uid - b.uid)
+            })
+            console.log(r);
+
+            // Sort Name
+            r = [...userData].sort((a, b) => {
+                return (a.unm.localeCompare(b.unm))
+            })
+            console.log(r);
+
+            // Sort Age
+            r = [...userData].sort((a, b) => {
+                return (a.age - b.age)
+            })
+            console.log(r);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

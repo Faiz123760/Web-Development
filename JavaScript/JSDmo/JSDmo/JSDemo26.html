@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <input type="radio" name="gender" value="Male" />Male
+    <input type="radio" name="gender" value="Female" />Female
+    <button id="myBtn">Button</button> <br />
+
+    <hr />
+
+    <input type="checkbox" name="hobbies" value="Swim" />Swimming
+    <input type="checkbox" name="hobbies" value="Read" />Reading
+    <input type="checkbox" name="hobbies" value="Dance" />Dancing
+    <input type="checkbox" name="hobbies" value="Sleep" />Sleeping
+
+    <button id="myBtn2">Button 2</button>
+    <button id="myBtn3">Select/DeSelect All</button>
+  </body>
+  <script>
+
+    let isChecked = false
+    document.getElementById('myBtn3').addEventListener('click', () => {
+
+      const chkList = document.getElementsByName('hobbies')
+      if (isChecked) {
+        chkList.forEach((chk) => chk.checked = false)
+      }
+      else {
+        chkList.forEach((chk) => chk.checked = true)
+      }
+      isChecked = !isChecked
+    })
+
+
+
+
+
+    document.getElementById('myBtn2').addEventListener('click', () => {
+
+      const chkList = document.getElementsByName('hobbies')
+      chkList.forEach((chk) => {
+        if (chk.checked)
+          console.log(chk.value);
+      })
+    })
+
+
+
+
+
+
+
+
+    document.getElementById('myBtn').addEventListener('click', () => {
+
+      const radioLst = document.getElementsByName('gender');
+      console.log(radioLst);
+
+      radioLst.forEach((radio) => {
+
+        if (radio.checked)
+          console.log(radio.value);
+      })
+    })
+  </script>
+
+</html>

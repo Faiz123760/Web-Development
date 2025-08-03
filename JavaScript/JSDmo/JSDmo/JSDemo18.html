@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+
+            let arr = [1, 2, 3];
+
+            // let sum = 0;
+            // arr.forEach((ele) => {
+            //     sum += ele;
+            // })
+            // console.log(sum);
+
+            let r = arr.reduce((sum, ele) => sum + ele, 0)
+            console.log(r);
+
+            let cart = [
+                { proName: 'Smart Watch', priceDoller: 499 },
+                { proName: 'Earpod', priceDoller: 299 },
+                { proName: 'Laptop', priceDoller: 899 },
+            ]
+
+            let tot_price = cart.reduce((tprice, ele) => tprice + ele.priceDoller, 0)
+            console.log(tot_price, cart, "hello");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+        
+
+    </body>
+
+</html>

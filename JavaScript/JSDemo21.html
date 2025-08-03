@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7f2595a60e.js" crossorigin="anonymous"></script>
+    <style>
+      .clsA {
+        background-color: navy;
+        color: aliceblue;
+      }
+
+      .clsB {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .clsC {
+        background-color: yellow;
+        color: brown;
+      }
+    </style>
+    <script>
+
+      function myfun() {
+        const ele = document.getElementById('pwd');
+        ele.type = (ele.type === 'password') ? 'text' : 'password';
+
+        const btn = document.getElementById('myBtn');
+        let lst = btn.classList;
+        if (lst.contains('fa-eye')) {
+          lst.replace('fa-eye', 'fa-eye-slash')
+        }
+        else {
+          lst.replace('fa-eye-slash', 'fa-eye')
+        }
+
+        // btn.textContent = (btn.textContent.trim() === 'SHOW') ? 'HIDE' : 'SHOW'
+
+        // console.log(ele);
+        // console.log(ele.value);
+        // console.log(ele.value.length);
+        // console.log(ele.type);
+        // console.log(ele.placeholder);
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="password" id="pwd" placeholder="Eg:Hp@123" />
+    <!-- <i class="fa-solid fa-eye"></i> -->
+    <button type="button" id="myBtn" class="fa-solid fa-eye"></button>
+  </body>
+
+  <script>
+    const btn = document.getElementById('myBtn');
+    btn.addEventListener('click', myfun)
+
+    // btn.addEventListener('click', () => {
+    //   alert('Hello...');
+    // })
+    // console.log(btn);
+  </script>
+
+</html>

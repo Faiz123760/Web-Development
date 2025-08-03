@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Page:1</title>
+    <style>
+        .myNav {
+            /* height: 200px; */
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .myNav img {
+            width: 90px;
+            height: 90px;
+        }
+        
+        .myNav>ul {
+            /* text-decoration: none; */
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .myNav>ul li>a {
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+            font-size: large;
+        }
+        
+        a:hover {
+            transform: scale(1.25);
+            color: white;
+            background-color: navy;
+            border-radius: 20px;
+        }
+        
+        @media screen and (min-width:768px) and (max-width:991px) {
+            .myNav {
+                justify-content: center;
+            }
+        }
+        
+        @media screen and (max-width:767px) {
+            .myNav {
+                flex-direction: column;
+            }
+            .myNav>ul {
+                flex-direction: column;
+            }
+            .myNav>ul>li {
+                text-align: center;
+                border-bottom: 1px solid lightslategray;
+            }
+            .myNav>img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+    <nav class="myNav">
+        <img src="image.png" alt="">
+        <ul>
+            <li><a href="CSS\DAY 5\Demo29.html">Home</a></li>
+            <li><a href="CSS\DAY 5\Demo30.html">About Us</a></li>
+            <li><a href="CSS\DAY 5\Demo31.html">Contact</a></li>
+            <li><a href="CSS\DAY 5\Demo32.html">Our Teams</a></li>
+            <li><a href="CSS\DAY 5\Demo33.html">Subs</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

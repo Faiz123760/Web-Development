@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="tableContainer"></div>
+    <button id="mybtn"> Button </button>
+</body>
+<script>
+    let userData = [
+        { uid: 1, unm: 'doe', age: 30, city: 'New York' },
+        { uid: 2, unm: 'john', age: 50, city: 'New York' },
+        { uid: 5, unm: 'Fariya', age: 5, city: 'New York' },
+        { uid: 4, unm: 'virat', age: 35, city: 'New York' },
+        { uid: 6, unm: 'Watson', age: 45, city: 'New York' },
+        { uid: 10, unm: 'ABD', age: 42, city: 'New York' },
+        { uid: 7, unm: 'chris Evan', age: 40, city: 'New York' },
+        { uid: 9, unm: 'Aariz', age: 1, city: 'New York' },
+        { uid: 8, unm: 'Arshmaan', age: 8, city: 'New York' },
+    ];
+
+    sortCols = {}
+
+    function createTable(data) {
+        // This script creates a dynamic table based on user data
+
+        const Mytable = document.createElement('table');
+        Mytable.setAttribute('border', '2px');
+        Mytable.setAttribute('border', '2px');
+        Mytable.setAttribute('border', '2px');
+        Mytable.setAttribute('border', '2px');
+
+        //table head Creation
+        const thead = document.createElement('thead');
+        const row = thead.insertRow();
+
+        const keys = Object.keys(data[0]);
+        //Create hradings for each key
+        keys.forEach(key => {
+            const colhead = document.createElement('th');
+            colhead.textContent = key.toUpperCase();
+            colhead.style.backgroundColor = 'lightblue';
+            colhead.style.color = 'black';
+            colhead.style.padding = '10px';
+            colhead.style.border = '1px solid black';
+            colhead.style.align = 'center';
+            colhead.style.fontWeight = 'bold';
+            colhead.style.cursor = 'pointer';
+
+            colhead.addEventListener('click', () => {
+
+                sortCols[key] = !sortCols[key]; // Toggle sorting order
+                const sorteddata = [...userData].sort((a, b) => {
+                    if (typeof a[key] === 'number')
+                        return sortCols[key] ? a[key] - b[key] : b[key] - a[key];
+                    // Sort the data based on the clicked column
+                    if (typeof a[key] === 'string') {
+                        return a[key].localeCompare(b[key]);
+                    }
+
+
+
+                })
+                console.log(sorteddata);
+                const table = document.getElementById('tableContainer');
+                table.innerHTML = ''; // Clear the existing table
+                table.append(createTable(sorteddata)); // Recreate the table with sorted data
+            });
+            row.append(colhead);
+        });
+        Mytable.append(thead);
+        let tbody = document.createElement('tbody');
+        data.forEach(user => {
+            const row = tbody.insertRow();
+            const values = Object.values(user);
+            keys.forEach(val => {
+                const cell = row.insertCell();
+                cell.textContent = values[keys.indexOf(val)];
+            });
+            tbody.append(row);
+        });
+        Mytable.append(tbody);
+        return Mytable;
+    }
+
+    const btnElement = document.getElementById('mybtn');
+    btnElement.addEventListener('click', () => {
+        const table = document.getElementById('tableContainer');
+        table.align = 'center';
+        table.append(createTable(userData));
+        
+    });
+
+
+
+</script>
+
+</html>

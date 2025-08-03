@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="mydiv"> 
+        My Division
+        <h1>Heading</h1>
+        <p id="myP">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, voluptatibus at! Saepe illo fugiat tempore
+            sunt alias incidunt minus voluptates non nisi debitis, veritatis quam nesciunt laboriosam eum eius
+            distinctio!
+        </p>
+    </div>
+
+    <button id="btn"> Button </button>
+
+    <input type="radio" name="gender" value="male" />male
+    <input type="radio" name="gender" value="female" />Female
+
+
+    <input type="checkbox"  name="hobbies" value="swim" /> Swimming
+    <input type="checkbox"  name="hobbies" value="Read" /> Reading
+    <input type="checkbox"  name="hobbies" value="Dance" /> Dancing
+    <input type="checkbox"  name="hobbies" value="sleep" /> Sleeping
+    
+
+    <button id="mybtn 2">Button 2</button>
+    <button id="mybtn 3"> Button 3</button>
+</body>
+
+<script>
+    let isChecked=false;
+    document.getElementById('mybtn 3').addEventListener('click',()=>{
+        const chklist = document.getElementsByName('hobbies');
+      if(isChecked){
+        chklist.forEach((chk)=> chk.checked = false)
+      }
+      else{
+       chklist.forEach((chk)=> chk.checked = true)
+      }
+      isChecked=!isChecked
+    })
+
+
+    
+    document.getElementById('mybtn 2').addEventListener('click', () => {
+       // const elediv = document.getElementById('myDiv')
+       // //onsole.log(elediv.innerHTML);
+       ////console.log(elediv.innerText);
+       // const radiolst = document.getElementsByName('gender')
+       // console.log(radiolst)
+//
+       // radiolst.forEach((radio) => {
+       //  if(radio.checked)
+       //  console.log()
+       // })
+        const chklist = document.getElementsByName('hobbies');
+       //chklist.forEach((chk)=>{
+       //    if(chk.checked){
+       //        console.log(chk.value)
+       //    }
+       //})
+      
+
+    
+      
+    })
+</script>
+
+</html>
